@@ -1,12 +1,12 @@
-ErrorDocument 403 /TPCliniqueVeterinaire/src/blogClinique/view/error.php
-ErrorDocument 404 /TPCliniqueVeterinaire/src/blogClinique/view/error.php
-ErrorDocument 405 /TPCliniqueVeterinaire/src/blogClinique/view/error.php
-ErrorDocument 408 /TPCliniqueVeterinaire/src/blogClinique/view/error.php
-ErrorDocument 500 /TPCliniqueVeterinaire/src/blogClinique/view/error.php
-ErrorDocument 502 /TPCliniqueVeterinaire/src/blogClinique/view/error.php
-ErrorDocument 504 /TPCliniqueVeterinaire/src/blogClinique/error.php
+ErrorDocument 403 /TPClinique_Veterinaire/src/blogClinique/view/error.php
+ErrorDocument 404 /TPClinique_Veterinaire/src/blogClinique/view/error.php
+ErrorDocument 405 /TPClinique_Veterinaire/src/blogClinique/view/error.php
+ErrorDocument 408 /TPClinique_Veterinaire/src/blogClinique/view/error.php
+ErrorDocument 500 /TPClinique_Veterinaire/src/blogClinique/view/error.php
+ErrorDocument 502 /TPClinique_Veterinaire/src/blogClinique/view/error.php
+ErrorDocument 504 /TPClinique_Veterinaire/src/blogClinique/error.php
 
 RewriteEngine On
-RewriteRule ^([^_]*)_([^_]*)\.html$ /TPCliniqueVeterinaire/src/blogClinique/?p=$1&a=$2 [L]
-RewriteRule ^([^_]*)_([^_]*)_([^_]*)\.html$ /TPCliniqueVeterinaire/src/blogClinique/?p=$1&a=$2&id=$3 [L]
-RewriteRule ^([^_]*)_([^_]*)_([^_]*)_([^_]*)_([^_]*)\.html$ /TPCliniqueVeterinaire/src/blogClinique/?p=$1&a=$2&postid=$3&commentId=$4&vote=$5 [L]
+RewriteRule ^([^_]*)_([^_]*)\.html$ /TPClinique_Veterinaire/src/blogClinique/?p=$1&a=$2 [L]
+RewriteRule ^([^_]*)_([^_]*)_([^_]*)\.html$ /TPClinique_Veterinaire/src/blogClinique/?p=$1&a=$2&id=$3 [L]
+RewriteRule ^([^_]*)_([^_]*)_([^_]*)_([^_]*)_([^_]*)\.html$ /TPClinique_Veterinaire/src/blogClinique/?p=$1&a=$2&postid=$3&commentId=$4&vote=$5 [L]
