@@ -1,6 +1,6 @@
 <?php
 
-namespace BlogPhp\Controller;
+namespace blogClinique\Controller;
 
 class Admin extends Blog
 {
@@ -34,7 +34,7 @@ class Admin extends Blog
         else
         {
           $this->oUtil->getModel('Admin');
-          $this->oModel = new \BlogPhp\Model\Admin;
+          $this->oModel = new \blogClinique\Model\Admin;
 
           $aData = array('post_id' => $_GET['id'], 'title' => $_POST['title'], 'body' => $_POST['body']);
           $this->oModel->update($aData);
@@ -79,7 +79,7 @@ class Admin extends Blog
           else
           {
             $this->oUtil->getModel('Admin');
-            $this->oModel = new \BlogPhp\Model\Admin;
+            $this->oModel = new \blogClinique\Model\Admin;
 
             $aData = array('title' => $_POST['title'], 'body' => $_POST['body'], 'created_date' => date('Y-m-d H:i:s'));
             $this->oModel->add($aData);
@@ -111,7 +111,7 @@ class Admin extends Blog
       header('Location: blog_index.html');
 
       $this->oUtil->getModel('Admin');
-      $this->oModel = new \BlogPhp\Model\Admin;
+      $this->oModel = new \blogClinique\Model\Admin;
 
       $tables = [
       	'Publications' 	      	 => 'Posts',
@@ -166,7 +166,7 @@ class Admin extends Blog
       header('Location: blog_index.html');
 
       $this->oUtil->getModel('Admin');
-      $this->oModel = new \BlogPhp\Model\Admin;
+      $this->oModel = new \blogClinique\Model\Admin;
 
       $this->oModel->deleteComments($_GET['id']); // supprime les commentaires du post
       $this->oModel->deleteVotes($_GET['id']);// supprime les votes des commentaires du post
@@ -182,7 +182,7 @@ class Admin extends Blog
       header('Location: blog_index.html');
 
       $this->oUtil->getModel('Admin');
-      $this->oModel = new \BlogPhp\Model\Admin;
+      $this->oModel = new \blogClinique\Model\Admin;
 
       $this->oModel->see_comment();
     }
@@ -194,7 +194,7 @@ class Admin extends Blog
       header('Location: blog_index.html');
 
       $this->oUtil->getModel('Admin');
-      $this->oModel = new \BlogPhp\Model\Admin;
+      $this->oModel = new \blogClinique\Model\Admin;
 
       $this->oModel->delete_comment();
       $this->oModel->deleteVotes($_GET['id']);
@@ -208,7 +208,7 @@ class Admin extends Blog
 
       $oPost = $this->oUtil->oPost = $this->oModel->getById($_GET['postid']); // Récupère les données du post
       $this->oUtil->getModel('Admin');
-      $this->oModel = new \BlogPhp\Model\Admin;
+      $this->oModel = new \blogClinique\Model\Admin;
 
       $iId = $_GET['id'];
       $this->oModel->deleteComment($iId); // supprime le commentaire

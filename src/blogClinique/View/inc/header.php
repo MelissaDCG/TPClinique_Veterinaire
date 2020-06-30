@@ -9,7 +9,7 @@
       <!--Let browser know website is optimized for mobile-->
       <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
       <meta charset="utf-8" />
-      <title><?=\BlogPhp\Engine\Config::SITE_NAME?></title>
+      <title><?=\blogClinique\Engine\Config::SITE_NAME?></title>
       <meta name="author" content="Romain Ollier" />
 
     </head>

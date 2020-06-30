@@ -1,6 +1,6 @@
 <?php
 
-namespace BlogPhp\Model;
+namespace blogClinique\Model;
 
 class Blog
 {
@@ -8,7 +8,7 @@ class Blog
 
   public function __construct()
   {
-    $this->oDb = new \BlogPhp\Engine\Db;
+    $this->oDb = new \blogClinique\Engine\Db;
   }
 
 

@@ -1,8 +1,8 @@
 <?php
 
-namespace BlogPhp\Engine;
+namespace blogClinique\Engine;
 
-use BlogPhp\Engine\Pattern\Singleton;
+use blogClinique\Engine\Pattern\Singleton;
 
 // include des paternes de class nécessaires
 require_once __DIR__ . '/Pattern/Base.trait.php';
@@ -22,7 +22,7 @@ class Loader
     private function _loadClasses($sClass)
     {
         // Remplacement du  namespace et du backslash
-        $sClass = str_replace(array(__NAMESPACE__, 'BlogPhp', '\\'), '/', $sClass);
+        $sClass = str_replace(array(__NAMESPACE__, 'blogClinique', '\\'), '/', $sClass);
 
         if (is_file(__DIR__ . '/' . $sClass . '.php'))
             require_once __DIR__ . '/' . $sClass . '.php';

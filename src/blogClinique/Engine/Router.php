@@ -1,13 +1,13 @@
 <?php
 
-namespace BlogPhp\Engine;
+namespace blogClinique\Engine;
 
 // On crée la class Router pour gérer l'éxécution d'un certain code suivant l'URL qui est tapée par l'utilisateur.
 class Router
 {
     public static function run (array $aParams)
     {
-        $sNamespace = 'BlogPhp\Controller\\';
+        $sNamespace = 'blogClinique\Controller\\';
         $sDefCtrl = $sNamespace . 'Blog';
         $sCtrlPath = ROOT_PATH . 'Controller/';
         $sCtrl = ucfirst($aParams['ctrl']); // ucfirst — Met le premier caractère en majuscule

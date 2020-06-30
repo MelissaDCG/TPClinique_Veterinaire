@@ -1,6 +1,6 @@
 <?php
 
-namespace BlogPhp\Model;
+namespace blogClinique\Model;
 
 class Admin extends Blog
 {

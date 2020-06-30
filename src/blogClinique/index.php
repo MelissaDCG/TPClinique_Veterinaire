@@ -1,8 +1,8 @@
 <?php
 
-namespace BlogPhp;
+namespace blogClinique;
 
-use BlogPhp\Engine as E;
+use blogClinique\Engine as E;
 
 // On déclare les constants (root server path + root URL)
 define('PROT', (!empty($_SERVER['HTTPS']) && strtolower($_SERVER['HTTPS']) == 'on') ? 'https://' : 'http://'); // Si on passe en https

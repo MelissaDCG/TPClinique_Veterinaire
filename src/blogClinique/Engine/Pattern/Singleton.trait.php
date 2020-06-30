@@ -1,6 +1,6 @@
 <?php
 
-namespace BlogPhp\Engine\Pattern;
+namespace blogClinique\Engine\Pattern;
 
 trait Singleton
 {

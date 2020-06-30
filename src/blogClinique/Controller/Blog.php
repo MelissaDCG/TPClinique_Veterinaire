@@ -1,6 +1,6 @@
 <?php
 
-namespace BlogPhp\Controller;
+namespace blogClinique\Controller;
 
 if (empty($_GET['a'])) {
 	$_GET['a'] = 'index';
@@ -19,11 +19,11 @@ class Blog
     if (empty($_SESSION))
         @session_start();
 
-    $this->oUtil = new \BlogPhp\Engine\Util;
+    $this->oUtil = new \blogClinique\Engine\Util;
 
     /** Récupère la classe Model dans toute la class controller **/
     $this->oUtil->getModel('Blog');
-    $this->oModel = new \BlogPhp\Model\Blog;
+    $this->oModel = new \blogClinique\Model\Blog;
 
     /** Récupère l'identifiant de publication dans le constructeur afin d'éviter la duplication du même code **/
     $this->_iId = (int) (!empty($_GET['id']) ? $_GET['id'] : 0);

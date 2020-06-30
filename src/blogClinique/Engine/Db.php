@@ -1,6 +1,6 @@
 <?php
 
-namespace BlogPhp\Engine;
+namespace blogClinique\Engine;
 
 class Db extends \PDO
 {
