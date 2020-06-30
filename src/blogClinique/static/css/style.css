@@ -1,0 +1,99 @@
+body
+{
+  /* background-color: #ECEFF1; */
+  display: flex;
+  min-height: 100vh;
+  flex-direction: column;
+}
+
+main
+{
+  flex: 1 0 auto;
+}
+
+.is_signaled
+{
+  /* background-color: #9E9E9E !important; */
+  transition: background 0.3s;
+}
+
+.vote-form
+{
+  display: inline-block;
+}
+
+.legalNotice{
+  padding: 0 0 50px 0;
+}
+
+.footer-row{
+  margin-bottom:0;
+}
+
+.navHeight{
+  min-height: 500px !important ;
+  width: 100%;
+}
+
+.logo {
+  width: 300px;
+  padding: 10px !important;
+}
+
+.bgBlue {
+  background-color: rgba(31, 31, 73, 0.89) !important;
+}
+
+.navSize {
+  height: 17vh;
+}
+
+.containerMenu {
+  padding-top: 30px;
+}
+
+.page-title {
+    font-size: 2rem;
+    text-align: center;
+    font-weight: bold;
+    color : #DE5C12;
+}
+
+.textOrange {
+  color : #DE5C12;
+}
+
+.bgOrange {
+  background-color: #DE5C12;;
+}
+
+
+.nav-wrapper {
+  height: 100%;
+}
+
+/* RESPONSIVE */
+
+@media all and (max-width: 785px){
+  .page-title
+  {
+    font-size: 3em;
+    text-align: center;
+    font-weight: bold;
+  }
+}
+
+@media all and (max-width: 482px){
+  nav .brand-logo
+  {
+    font-size: 3rem;
+  }
+
+  .page-title
+  {
+    font-size: 2rem;
+    text-align: center;
+    font-weight: bold;
+    text-align: center;
+  }
+}

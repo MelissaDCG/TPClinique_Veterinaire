@@ -1,0 +1,33 @@
+.bg-blue {
+    background-color: rgba(31, 31, 73, 0.89);
+}
+
+.bgOrange {
+    background-color: #DE5C12 !important;
+}
+
+.text-orange{
+    color: #DE5C12;
+}
+
+.cover {
+    background-image: url("../images/cover.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    background-color: #DE5C12; 
+    height: 78vh;
+}
+
+.coverTitle {
+    font-size: 4rem;
+}
+
+.iconTab {
+    color: white !important;
+}
+
+body{
+    min-height: 100vh;
+}
