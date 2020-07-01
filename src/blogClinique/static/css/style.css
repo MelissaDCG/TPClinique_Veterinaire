@@ -67,6 +67,10 @@ main
   background-color: #DE5C12;;
 }
 
+.bgOrange.btn:hover {
+  background-color: rgba(31, 31, 73, 0.89) !important;;
+}
+
 
 .nav-wrapper {
   height: 100%;
