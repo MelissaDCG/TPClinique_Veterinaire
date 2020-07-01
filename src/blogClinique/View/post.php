@@ -61,7 +61,7 @@
 
             <!-- Formulaire -->
             <?php if(empty($_SESSION['is_user']) && empty($_SESSION['is_admin'])): ?>
-                <a href="<?=ROOT_URL?>?p=blog&amp;a=login"><button class="btn waves-effect waves-light">Se connecter pour commenter</button></a>
+                <a href="<?=ROOT_URL?>?p=blog&amp;a=login"><button class="btn waves-effect waves-light bgOrange">Se connecter pour commenter</button></a>
                 <br><br>
             <?php else: ?>
                 <h4>Commenter :</h4>
@@ -73,7 +73,7 @@
                             <label for="comment">Commentaire</label>
                         </div>
                         <div class="col s12">
-                            <button type="submit" name="submit_comment" class="btn waves-effect waves-light">
+                            <button type="submit" name="submit_comment" class="btn waves-effect waves-light bgOrange">
                                 Commenter
                             </button>
                         </div>
