@@ -122,7 +122,7 @@ class Admin extends Blog
 
       $colors = [
       	'Posts'				           => 'green',
-      	'Comments' 		  	       => 'brown',
+      	'Comments' 		  	       => 'orange',
       	'Users' 			           => 'blue',
         'Votes'                  => 'red'
       ];
